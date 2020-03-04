@@ -1,5 +1,3 @@
-package asesorias.P01B;
-import java.lang.Math;
 
 public class NumeroComplejo {
     

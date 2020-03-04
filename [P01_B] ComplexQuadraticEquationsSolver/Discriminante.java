@@ -1,4 +1,3 @@
-package asesorias.P01B;
 
 import java.lang.Math;
 
@@ -19,10 +18,10 @@ public class Discriminante {
 
     public double obtenerDiscriminante() {
         double valorUno = Math.pow(coeficienteB, 2) - 4 * coeficienteA * coeficienteC;
-        return Math.sqrt(valorUno);
+        return valorUno;
     }
 
-    public void setEcuacionCuadratica(double coeficienteA, double coeficienteB, double coeficienteC){
+    public void setDiscriminante(double coeficienteA, double coeficienteB, double coeficienteC){
         this.coeficienteA = coeficienteA;
         this.coeficienteB = coeficienteB;
         this.coeficienteC = coeficienteC;

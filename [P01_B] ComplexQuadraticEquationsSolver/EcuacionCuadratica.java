@@ -1,4 +1,3 @@
-package asesorias.P01B;
 
 public class EcuacionCuadratica {
 
@@ -15,7 +14,8 @@ public class EcuacionCuadratica {
     }
 
     public void mostrarEcuacionCuadratica() {
-
+        
+        System.out.println(a+"x**2"+b+"x"+c);
     }
 
     public void setEcuacionCuadratica(double a, double b, double c) {
