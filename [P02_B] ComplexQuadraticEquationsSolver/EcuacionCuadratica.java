@@ -1,26 +1,25 @@
+/*
+*@author Ian Alexander Ruiz González - 2CV3
+*/
 
 public class EcuacionCuadratica {
 
     private double a, b, c;
-    private NumeroComplejo raizUno;
-    private NumeroComplejo raizDos;
-
-    public EcuacionCuadratica() {
-        this.a = 0;
-        this.b = 0;
-        this.c = 0;
-        this.raizUno = new NumeroComplejo();
-        this.raizDos = new NumeroComplejo();
-    }
 
     public void mostrarEcuacionCuadratica() {
+        //Todo positivo
         if (b >= 0 && c >= 0) {
-            System.out.println("f(x)="+a + "x**2+" + b + "x+" + c);
-        } else if (b >= 0 && c < 0) {
-            System.out.println("f(x)="+a + "x**2+" + b + "x" + c);
-        } else if(b <0 && c >=0){
-            System.out.println("f(x)="+a + "x**2" + b + "x+" + c);        
+            System.out.println("\nTu ecuación cuadrática es: f(x)="+a + "x^2+" + b + "x+" + c);
+        } 
+        //c negativa
+        else if (b >= 0 && c < 0) {
+            System.out.println("\nTu ecuación cuadrática es: f(x)="+a + "x^2+" + b + "x" + c);
+        } 
+        //b negativa
+        else if(b <0 && c >=0){
+            System.out.println("\nTu ecuación cuadrática es: f(x)="+a + "x^2" + b + "x+" + c);        
         }
+        //Ultimo caso no escrito, todo negativo
     }
 
     public void setEcuacionCuadratica(double a, double b, double c) {
@@ -52,21 +51,4 @@ public class EcuacionCuadratica {
     public void setC(double c) {
         this.c = c;
     }
-
-    public NumeroComplejo getRaizUno() {
-        return raizUno;
-    }
-
-    public void setRaizUno(NumeroComplejo raizUno) {
-        this.raizUno = raizUno;
-    }
-
-    public NumeroComplejo getRaizDos() {
-        return raizDos;
-    }
-
-    public void setRaizDos(NumeroComplejo raizDos) {
-        this.raizDos = raizDos;
-    }
-
 }
