@@ -27,7 +27,7 @@ public class FormulaGeneral {
             raizUno.setParteReal(fraccionA);
             raizUno.setParteImaginaria(-1*fraccionB);
             raizDos.setParteReal(fraccionA);
-            raizDos.setParteImaginaria(-1 * raizUno.getParteImaginaria());
+            raizDos.setParteImaginaria(fraccionB);
         } else {
             raizUno.setParteReal(fraccionA + fraccionB);
             raizDos.setParteReal(fraccionA - fraccionB);
