@@ -1,6 +1,3 @@
-/*
-*@author Ian Alexander Ruiz González - 2CV3
-*/
 import java.util.LinkedList;
 
 public class AppCalculadora {
