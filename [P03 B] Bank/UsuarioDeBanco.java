@@ -1,5 +1,3 @@
-package Parte01;
-
 public class UsuarioDeBanco {
 
     private String nombreCompleto;
