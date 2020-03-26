@@ -1,6 +1,3 @@
-package Parte01;
-
-
 public class Mensaje {
 
     private String mensaje;
