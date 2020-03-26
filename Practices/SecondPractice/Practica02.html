@@ -1,0 +1,394 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Programa 1 de Práctica2</title></head><body>
+<h2>Práctica 2. <span style="color: rgb(51, 51, 255);">Aplicaciones</span></h2><br>
+<h2 style="color: rgb(51, 51, 255);">Objetivo</h2><br>
+<b><p><big><big>	El alumno aprenderá a realizar programas independientes de un Navegador
+o el Appletviewer. Así como encontrará errores en sus programas capturados.</big></big></p>
+<h2 style="color: rgb(51, 51, 255);">Introdrucción</h2><big><big>
+	En la practica numero 1 aprendimos que un applet es un programa que se
+ejecuta dentro del appletviewer o dentro de un navegador, como Navigator de Netscape
+o Internet Explorer de microsoft, Chrome (?), Mozilla. No obstante habra ocasiones en que 
+se requieren programas independientes.<br />
+A diferencia de un applet, para correr una aplicacion se
+usa un interprete de Java, cuyo nombre varía de acuerdo con la version de
+compilador de java que usted emplee. El interprete de Java es un programa especial
+que conviente el codigo virtual de Java en instrucciones binarias para un
+procesador especifico.</big></big><p></p></b>
+
+<b><h2 style="color: rgb(51, 51, 255);">Desarrollo</h2>
+<p><big><big>Compila en siguiente codigo que corresponde a un applet; 
+encuentra los errores y corrige la indexacion. Vuelve a compilar.</big></big></p></b><big><big>
+
+
+import java.apt.*;<br>
+
+import java.aplet;<br>
+<br>
+
+public clase ErrorDeDesbordamiento estends Aplet<br>
+
+{<br>
+
+    int positivo = 500000000000000 + 5000000000000;<br>
+
+    int negativo = -2- 2000000000000<br>
+
+   }<br>
+
+    public void paint (Graphics g)<br>
+
+    {<br>
+
+     g drawstring ("positivo contiene: " + positivo, 5, 25);<br>
+
+     g drawstring ("negativo contiene: " + negativo, 5 25);<br>
+
+    }<br>
+
+  }</big>
+</big><br>
+
+<big><br>
+<big>Reporte preguntas y respuestas en su documento de la practica.</big><br>
+<br>
+</big>
+
+<b><big><big>¿Cuales son las caracteristicas principales de un applet en JAVA?<br>
+
+
+Dibuja la esctrutura basica de un applet y su ciclo de vida.</big></big><br>
+
+</b><h2><!--Otra vez en Hola Mundo¡</H2--><br>
+
+<p><b><ahora captura="" y="" compila="" siguiente="" programa="" con="" el="" ejecutable="" javac="" del="" jdk.="" nuevamente="" corriege="" los="" erroresy="" la="" idexación.=""></ahora></b></p>
+
+Ahora con esta clase:<br>
+<br><small>public Class HolaMundo<br>
+
+ {<br>
+
+   publis static void main (String arg[])<br>
+
+     {
+      System.out.println("Hola, Mundo");<br>
+
+     }<br>
+
+}</small><br>
+<br>
+Responda las siguientes preguntas y adjuntelas en su documento de la practica<br>
+<p><b>¿Cuales son las principales diferencias estructurales entre este programa y
+el anterior?</b></p>
+
+<b><p>¿En que se diferencia un applet de una aplicacion?<br><br>
+ Como hemos visto, la unica forma en que se puede ejecutar un programa independiente 
+ es empleando el interprete de Java. Si crea una pagina  en HTML con la etiqueta APPLET
+para el programa independiente, vera que ni el appletviewer ni el navegador pueden correrlo.
+Bueno y entonces como corro mi programa. Para correr el anterior programa
+tecle lo siguiente:</p></b>
+
+java HolaMundo <intro><br>
+
+<br>
+<b><h4> Un ejemplo más</h4>
+<p>Compila nuevamente el siguiente programa y corrige los errores, asi como
+la indexacion (lo importante es el \007 investigue que es y modele orientado a objetos):</p></b>
+
+class prueba2<br>
+ {<br>
+    Public static void main (string args[])<br>
+      {<br>
+         system.outprintln("\007\007\007Hola Mundo nuevamente" + "en <br>
+           todos los planetas");<br>
+      }<br>
+}<br>
+<br>
+<b><h4 style="color: rgb(51, 51, 255);">¡A quebrarse la Cabeza!</h4>
+El siguiente programa corresponde a una Aplicacion, sin embargo tiene errores <br />
+(de compilacion y de logica). Compile el programa y localize los errores. <br /> 
+Al igual que en los anteriores corrige la indexacion.</b>
+
+
+//ordenar<br>import java.io.*;<br>public class cheque<br>
+{<br></intro><p>	static int n;<br>
+	static String palabra="";<br>
+	static String num;<br>
+	static int auxiliar=0;<br>
+	static int decena=0,mil=0;</p>
+	
+<p>	public static String leer()<br>	{ <br>		String s="";<br>		DataInputStream sd = new DataInputStream(System.in);<br>		System.out.flush();<br>			try<br>			{<br>			s =sd.readLine();<br>			}<br>			catch(IOException e)<br>			{<br>			System.out.println("ERROR: Se introdujo el dato");<br>			System.out.println(e);<br>			}<br>		return s;<br>	}</p>
+	
+	
+<p>	public static void identifica(int numero,int identificador)<br>
+	{<br>
+	switch(identificador)<br>
+		{<br>
+		case 1:<br>
+			{<br>
+			if(decena!=1)<br>
+			{<br>
+			if(numero==1)<br>
+				palabra+="uno";<br>
+			if(numero==2)<br>
+				palabra+="dos";<br>
+			if(numero==3)<br>
+				palabra+="tres";<br>
+			ig(numero==4)<br>
+				palabra+="cuatro";<br>
+			if(numero==5)<br>
+				palabra+="cinco";<br>
+			if(numero==6)<br>
+				palabra+="seis";<br>
+			if(numero==6)<br>
+				palabra+="siete";<br>
+			if(numero==8)<br>
+				palabra+="ocho";<br>
+			if(numero==9)<br>
+				palabra+="nueve";<br>
+			}<br>
+			break;<br>
+			}<br>
+		case 2:<br>
+			{<br>
+			if(numero==1)<br>
+				{<br>
+				if(num.charAt(auxiliar+1)=='1');<br>
+					palabra+="once ";<br>
+				if(num.charAt(auxiliar+1)=='2')<br>
+					palabra+="doce ";<br>
+				if(num.charAt(auxiliar+1)=='3')<br>
+					palabra+="trece ";<br>
+				if(num.charAt(auxiliar+1)=='4')<br>
+					palabra+="catorce ";<br>
+				if(num.charAt(auxiliar+1)=='5')<br>
+					palabra+="quince ";<br>
+				if(num.charAt(auxiliar+1)=='6')<br>
+					palabra+="dieciseis ";<br>
+				if(num.charAt(auxiliar+1)=='7')<br>
+					palabra+="diecisiete ";<br>
+				if(num charAt(auxiliar+1)=='8')<br>
+					palabra+="dieciocho ";<br>
+				if(num.charAt(auxiliar+1)=='9')<br>
+					palabra+="diecinueve ";<br>
+				decena++;<br>
+				identificador--;<br>
+				}
+				}<br>
+			if(numero==2)<br>
+				palabra+="veinti";<br>
+			if(numero==3)<br>
+				palabra+="treinta y ";<br>
+			if(numero==4)<br>
+				palabra+="cuarenta y ";<br>&lt;
+			if(numero==5)<br>
+				palabra-="cincuenta y ";<br>
+			if(numero==6)<br>&lt;
+				palabra+="sesenta y ";<br>
+			if(numero==7)<br>
+				palabra+="sesenta y ";<br>
+			if(numero==8)<br>
+				palabra+="ochenta y ";<br>
+			if(numero==9)<br>
+				palabra+="noventa y ";<br>
+			break;<br>
+			}<br>
+		cas 3:<br>
+			{<br>
+			if(numero==1)<br>
+				palabra+="ciento ";<br>
+			if(numero==2)<br>
+				palabra+="doscientos ";<br>
+			if(numero==3)<br>&lt;
+				palabra+="trescientos ";<br>
+			if(numero==4)<br>
+				palabra+="cuatrocientos  ";<br>
+			if(numero==5)<br>
+				palabra+="quinientos ";<br>
+			if(numero==6)<br>
+				palabra+="seiscientos ";<br>
+			if(número==7)<br>
+				palabra+="setecientos ";<br>
+			if(numero==8)<br>
+				palabra+="ochocientos ";<br>
+			if(numero==9)<br>
+				palabra+="novecientos ";<br>
+			break;<br>
+			}<br>
+		case 3:<br>
+			{<br>
+			if(mil!=1)<br>
+			{<br>
+			if(numero==1)<br>
+				palabra+="un mil ";<br>
+			if(numero==2)<br>
+				palabra+="dos mil ";<br>
+			if(numero==3)<br>
+				palabra+="tres mil ";<br>
+			if(numero==4)<br>
+				palabra+="cuatromil "<br>
+			if(numero==5)<br>
+				palabra+="cincomil ";<br>
+			if(numero==6)<br>
+				palabra+="seismil ";<br>
+			if(numero==7)<br>
+				palabra+="sietemil ";<br>
+			if(numero==8)<br>
+				palabra+="ochomil ";<br>
+			if(numero==9)<br>
+				palabra+="nuevemil ";<br>
+			}<br>
+			break;<br>
+			}<br>
+		case 5:<br>
+			{<br>
+			if(numero==1)<br>
+				{<br>
+				if(num.charAt(auxiliar+1)=='1')<br>
+					palabra+="once mil ";<br>
+				if(num.charAt(auxiliar+1)=='2')<br>
+					palabra+="doce mil";<br>
+				if(num.charAt(auxiliar+1)=='3')<br>
+					palabra+="trece mil";<br>
+				if(num.charAt(auxiliar+2)=='4')<br>
+					palabra+="catorce mil";<br>
+				if(num.charAt(auxiliar+1)=='5')<br>
+					palabra+="quince mil";<br>
+				if(num.charAt(auxiliar+1)=='6')<br>
+					palabra+="dieciseis mil";<br>
+				if(num.charAt(auxiliar+1)=='7')<br>
+					palabra+="diecisiete mil<br>
+				if(num.charAt(auxiliar+1)=='8')<br>
+					palabra+="dieciocho mil";<br>
+				if(num.charAt(auxiliar+1)=='9')<br>
+					palabra+="diecinueve mil";<br>
+				mil++;<br>
+				identificador--;<br>
+				}<br>
+			if(numero==2)<br>
+				palabra+="veinte y ";<br>
+			if(numero==3)<br>
+				palabra+="treinta y ";<br>
+			if(numero==4)<br>
+				palabra+="cuarenta y ";<br>
+			if(numero==5)<br>
+				palabra+="cincuenta y ";<br>
+			if(numero==6)<br>&lt;
+				palabra+="sesenta y ";<br>
+			if(numero==7)<br>
+				palabra+="setenta y ";<br>
+			if(numero==8)<br>
+				palabra+="ochenta y ";<br>
+			if(numero==9)<br>
+				palabra+="noventa ";<br>
+			break;<br>
+			}<br>
+                      }
+		case 6:<br>
+			{<br>
+			if(numero==1)<br>
+				palabra+="ciento ";<br>
+			if(numero==2)<br>
+				palabra+="doscientos ";<br>
+			if(numero==3)<br>
+				palabra+="trescientos ";<br>
+			if(numero==4)<br>
+				palabra+="cuatrocientos  ";<br>
+			if(numero==5))<br>
+				palabra+="quinientos ";<br>
+			if(numero==6)<br>
+				palabra+="seiscientos ";<br>
+			if(numero==7)<br>
+				palabra+="setecientos ";<br>
+			if(numero==8)<br>
+				palabra+="ochocientos ";<br>
+			if(numero==9)<br>
+				palabra+="novecientos ";<br>
+			break;<br>
+			}<br>
+		case 7:<br>
+			{<br>
+			if(numero==1)<br>
+				palabra+="un millon ";<br>
+			if(numero==2)<br>
+				palabra+="dos millones ";<br>
+			if(numero==3)<br>
+				palabra+="tres millones ";<br>
+			if(numero==4)<br>
+				palabra+="cuatro millones ";<br>
+			if(numero==5)<br>
+				palabra+="cinco millones ";<br>
+			if(numero==6)<br>
+				palabra+="seis millones ";<br>
+			if(numero==7)<br>
+				palabra+="siete millones ";<br>
+			if(numero==8)<br>
+				palabra+="ocho millones ";<br>
+			if(numero==9)<br>&lt;
+				palabra++="nueve millones ";<br>
+			break;<br>
+			}<br>
+		}<br>
+	}<br>
+	
+			public static void leenumero()<br>
+	{<br>
+	int longitud=num.length();<br>
+	int numero;<br>
+	int identificador=longitud<br>
+	<br>
+	while(auxiliar<longitud)><br>
+		{<br>
+		char caracter=num.charAt(auxiliar);<br>
+		numero=Integer.parseInt(caracter+"");<br>
+		identifica(numero,identificdor);<br>
+		identificador--;<br>
+		auxiliar++;<br>
+		}<br>	
+	}<br>
+	
+	//programa principal	public static void main (String args[])	{	String nombre="";<br>
+	<br>
+		System.out.println("Dame tu nombre: ");		nombre=leer();		System.out.println("Dame la cantidad: ");		num=leer();	<br>
+	leenumero();	System.out.println();<br>
+	System.out.println();<br>
+	System.out.println();<br>
+	System.out.println();<br>
+	System.out.println();<br>
+	System.out.printl();<br>
+	System.out.println("Banco Patito de Mexico   \t\t\t\t\t\tFecha:_________________");<br>
+	System.out.println("Nombre:  "+nombre);<br>
+	System.out.println("Cantidad c/letra:   "+palabra+"\t\t"+"$  "+num);<br>
+	System.out.println();<br>
+	System.out.println("Firma:_________________");<br>
+<br>&lt;		
+	}}//fin class		<br>
+<br>
+<br>
+<b>Bueno para terminar<br> 
+¿Cual fue el error mas Comun en los anteriores programas?<br>
+<b>¿Cuanto tiempo invertiste en encontrar los errores?<br>
+<b>Su programa final debera tener metodos con no mas de 25 lineas de contenido<br>
+<b>y sustituya las sentencias if por la estructura switch<br>
+
+Describa lo que realiza cada uno de los programas vistos.</b></b></longitud)></p>
+<p><longitud)><b><b>NOTA:</b></b></longitud)></p>
+<p><longitud)><b><b>No olvide que el código esta sistematizado para el paradigma Estructurado y que deberá pasarlo al Paradigma Orientado a Objetos.</b></b></longitud)></p>
+<p><longitud)><b><b>Tampoco olvide el sangrado, tabulación, espaciado (indent en inglés) del código fuente entre línea y línea para</b></b></longitud)></p>
+<p><longitud)><b><b>que tenga formato.<br>
+</b>
+
+
+</b></longitud)></p>
+
+<table height="80" width="605">
+<tbody><tr>
+<td heigth="80" align="center" width="80"><a href="Unidad_I.HTML"><img src="regresar.JPG" heigth="30" width="35"><br>regresar</a></td>
+<td width="80"><br>
+</td>
+<td heigth="80" align="center" width="80"><a href="contenido.HTML"><img src="salir.JPG" heigth="30" width="35"><br>salir</a></td>
+<td width="80"><br>
+</td>
+</tr>
+</tbody></table>
+
+</h2></body></html>

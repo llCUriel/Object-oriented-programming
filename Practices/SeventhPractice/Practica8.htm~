@@ -1,0 +1,902 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Practica10_archivos/filelist.xml">
+<link rel=Edit-Time-Data href="./Practica10_archivos/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Practica8</title>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129023 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129023 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:454257790;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-726601138 1531849386 1016745394 -107572458 1418373914 -1388556500 -506666802 -1102310338 156667386 1541326938;}
+@list l1
+	{mso-list-id:1112824074;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1613113868 -1732895026 985444776 277932580 -230519418 -240713750 2026283472 493234536 -365364396 -2085589656;}
+@list l2
+	{mso-list-id:1873837353;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-379296706 809384568 1720865492 -33024622 -974213176 669386680 1590354570 1859560646 -671076796 1285703106;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1036"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta name=Título content=" ">
+<meta name=Template
+content="C:\Archivos de programa\Microsoft Office\Plantillas\Páginas Web\Asistente para páginas Web.wiz">
+</head>
+
+<body bgcolor=white background=Image8.gif lang=ES link=blue vlink=purple
+style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p style='margin-left:36.0pt'><b><span style='font-size:36.0pt;font-family:
+Garamond'>Practica 9 <o:p></o:p></span></b></p>
+
+<p style='margin-left:72.0pt'><span style='font-family:Garamond'>&nbsp;<o:p></o:p></span></p>
+
+<p><a name="_Objetivo"></a><b><span style='font-size:13.5pt;font-family:Garamond;
+color:blue'>Objetivo :</span></b><span style='font-size:13.5pt;font-family:
+Garamond'> </span><span style='font-family:Garamond'>Al termino de la práctica
+el alumno comprobará el uso de los manejadores de excepciones y podrá crear y
+lanzar sus propias excepciones gestionando el flujo del programa utilizando
+todos los manejadores que </span><span style='font-family:Garamond;color:blue'>JAVA</span><span
+style='font-family:Garamond'> incluye. <o:p></o:p></span></p>
+
+<p><b><span style='font-size:13.5pt;font-family:Garamond;color:blue'>Introducción
+:</span></b><span style='font-size:13.5pt;font-family:Garamond'> </span><span
+style='font-family:Garamond'>Como se vio en la practica anterior (practica 8),
+aprendimos a utilizar la pareja de manejadores de excepciones </span><span
+style='font-family:Garamond;color:blue'>try-catch</span><span style='font-family:
+Garamond'>, con la cual gestionamos los posibles errores que puedan ocurrir en
+nuestro programa en tiempo de ejecucion, tambien, podemos nosotros crear
+excepciones de cualquier tipo dandoles nombres propios, en donde se hace uso de
+los manejadores </span><span style='font-family:Garamond;color:blue'>throw</span><span
+style='font-family:Garamond'> y </span><span style='font-family:Garamond;
+color:blue'>throws,</span><span style='font-family:Garamond'> sin dejar de
+utilizar a </span><span style='font-family:Garamond;color:blue'>try-catch</span><span
+style='font-family:Garamond'>. Finalmente el uso adecuado de </span><span
+style='font-family:Garamond;color:blue'>finally</span><span style='font-family:
+Garamond'>, nos proporcionará una forma muy especial de manejar un bloque o
+varios del codigo que queramos ejecutar antes de devolver el flujo del programa
+desde la llamada a la gestion de la excepcion.<o:p></o:p></span></p>
+
+<p><b><span style='font-size:13.5pt;font-family:Garamond;color:blue'>Desarrollo:<o:p></o:p></span></b></p>
+
+<p><span style='font-family:Garamond'><img width=13 height=13 id="_x0000_i1025"
+src=Bullet1.gif border=0>&nbsp;</span><span style='font-family:Garamond;
+color:blue'>Problema 1.</span><span style='font-family:Garamond'> Del siguiente
+programa diga que es lo que realiza y como es que están trabajando los
+controladores de excepciones. Sea cuidadoso y detalle su respuesta<o:p></o:p></span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>import java.util.*;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>class Pet {}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>class Dog extends Pet
+     {}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>class Pug extends Dog
+     {}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>class Cat extends Pet
+     {}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>class Rodent extends
+     Pet {}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>class Gerbil extends
+     Rodent {}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>class Hamster extends
+     Rodent {}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>class Counter { int
+     i; }<o:p></o:p></span></b></li>
+</ol>
+
+<p style='margin-left:36.0pt'><b><span lang=EN-US style='font-family:Garamond;
+color:blue;mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></b></p>
+
+<ol start=10 type=1>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>public class PetCount
+     {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>static String[]
+     typenames = { &quot;Pet&quot;, &quot;Dog&quot;, &quot;Pug&quot;,
+     &quot;Cat&quot;,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>&quot;Rodent&quot;,
+     &quot;Gerbil&quot;, &quot;Hamster&quot;,};<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>// Exceptions thrown
+     out to console:<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>public static void
+     main(String[] args)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throws Exception {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>ArrayList pets = new
+     ArrayList();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>try {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class[] petTypes = {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class.forName(&quot;Dog&quot;),<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class.forName(&quot;Pug&quot;),<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class.forName(&quot;Cat&quot;),<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class.forName(&quot;Rodent&quot;),<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class.forName(&quot;Gerbil&quot;),<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class.forName(&quot;Hamster&quot;),
+     };<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     15; i++)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>pets.add(
+     petTypes[(int)(Math.random()*petTypes.length)].newInstance());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}
+     catch(InstantiationException e) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.err.println(&quot;Cannot
+     instantiate&quot;);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throw e;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}
+     catch(IllegalAccessException e) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.err.println(&quot;Cannot
+     access&quot;);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throw e;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}
+     catch(ClassNotFoundException e) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.err.println(&quot;Cannot
+     find class&quot;);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throw e;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>HashMap h = new
+     HashMap();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     typenames.length; i++) h.put(typenames[i], new Counter());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     pets.size(); i++) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Object o =
+     pets.get(i);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof Pet)
+     ((Counter)h.get(&quot;Pet&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof Dog)
+     ((Counter)h.get(&quot;Dog&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof Pug)
+     ((Counter)h.get(&quot;Pug&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof Cat)
+     ((Counter)h.get(&quot;Cat&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof
+     Rodent) ((Counter)h.get(&quot;Rodent&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof
+     Gerbil) ((Counter)h.get(&quot;Gerbil&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof
+     Hamster) ((Counter)h.get(&quot;Hamster&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     pets.size(); i++) System.out.println(pets.get(i).getClass());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     typenames.length; i++)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.out.println(
+     typenames[i] + &quot; quantity: &quot; +
+     ((Counter)h.get(typenames[i])).i);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span
+     style='font-family:Garamond'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo2;tab-stops:list 36.0pt'><b><span
+     style='font-family:Garamond'>}<o:p></o:p></span></b></li>
+</ol>
+
+<p><span style='font-family:Garamond'>&nbsp;<o:p></o:p></span></p>
+
+<p><span style='font-family:Garamond'><img width=13 height=13 id="_x0000_i1026"
+src=Bullet1.gif border=0>&nbsp;</span><span style='font-family:Garamond;
+color:blue'>Problema 2.</span><span style='font-family:Garamond'> Para el
+siguiente programa realice lo mismo que en el anterior punto.<o:p></o:p></span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>import java.util.*;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>public class
+     PetCount2 {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>public static void
+     main(String[] args)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throws Exception {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>ArrayList pets = new
+     ArrayList();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class[] petTypes = {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>// Class literals:<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Pet.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Dog.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Pug.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Cat.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Rodent.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Gerbil.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Hamster.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>};<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>try {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     15; i++) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>// Offset by one to
+     eliminate Pet.class:<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>int rnd = 1 + (int)(<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Math.random() *
+     (petTypes.length - 1));<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>pets.add(<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>petTypes[rnd].newInstance());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>} catch(InstantiationException
+     e) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.err.println(&quot;Cannot
+     instantiate&quot;);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throw e;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}
+     catch(IllegalAccessException e) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.err.println(&quot;Cannot
+     access&quot;);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throw e;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>HashMap h = new
+     HashMap();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     petTypes.length; i++)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>h.put(petTypes[i].toString(),new
+     Counter());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     pets.size(); i++) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Object o =
+     pets.get(i);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof Pet)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>((Counter)h.get(&quot;class
+     Pet&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof Dog)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>((Counter)h.get(&quot;class
+     Dog&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof Pug)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>((Counter)h.get(&quot;class
+     Pug&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof Cat)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>((Counter)h.get(&quot;class
+     Cat&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof
+     Rodent)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>((Counter)h.get(&quot;class
+     Rodent&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof
+     Gerbil)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>((Counter)h.get(&quot;class
+     Gerbil&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if(o instanceof
+     Hamster)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>((Counter)h.get(&quot;class
+     Hamster&quot;)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     pets.size(); i++)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.out.println(pets.get(i).getClass());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Iterator keys =
+     h.keySet().iterator();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>while(keys.hasNext())
+     {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>String nm =
+     (String)keys.next();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Counter cnt =
+     (Counter)h.get(nm);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.out.println(<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>nm.substring(nm.lastIndexOf('.')
+     + 1) +<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>&quot; quantity:
+     &quot; + cnt.i);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span
+     style='font-family:Garamond'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span
+     style='font-family:Garamond'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><b><span
+     style='font-family:Garamond'>}<o:p></o:p></span></b></li>
+</ol>
+
+<p><span style='font-family:Garamond'><img width=13 height=13 id="_x0000_i1027"
+src=Bullet1.gif border=0>&nbsp;</span><span style='font-family:Garamond;
+color:blue'>Problema 3.</span><span style='font-family:Garamond'> Una vez más
+explique detalladamente que realiza cada uno de las siguientes líneas del
+programa que a continuación se muestra.<o:p></o:p></span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>import java.util.*;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>public class
+     PetCount3 {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>public static void
+     main(String[] args)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throws Exception {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>ArrayList pets = new
+     ArrayList();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Class[] petTypes = {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Pet.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Dog.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Pug.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Cat.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Rodent.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Gerbil.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Hamster.class,<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>};<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>try {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     15; i++) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>// Offset by one to
+     eliminate Pet.class:<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>int rnd = 1 + (int)(<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Math.random() *
+     (petTypes.length - 1));<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>pets.add(<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>petTypes[rnd].newInstance());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}
+     catch(InstantiationException e) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.err.println(&quot;Cannot
+     instantiate&quot;);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throw e;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}
+     catch(IllegalAccessException e) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.err.println(&quot;Cannot
+     access&quot;);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>throw e;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>HashMap h = new
+     HashMap();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     petTypes.length; i++)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>h.put(petTypes[i].toString(),<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>new Counter());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     pets.size(); i++) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Object o =
+     pets.get(i);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>// Using isInstance
+     to eliminate individual<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>// instanceof
+     expressions:<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for (int j = 0; j
+     &lt; petTypes.length; ++j)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>if
+     (petTypes[j].isInstance(o)) {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>String key =
+     petTypes[j].toString();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>((Counter)h.get(key)).i++;<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>for(int i = 0; i &lt;
+     pets.size(); i++)<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.out.println(pets.get(i).getClass());<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Iterator keys =
+     h.keySet().iterator();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>while(keys.hasNext())
+     {<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>String nm =
+     (String)keys.next();<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>Counter cnt =
+     (Counter)h.get(nm);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>System.out.println(<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>nm.substring(nm.lastIndexOf('.')
+     + 1) +<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span lang=EN-US
+     style='font-family:Garamond;mso-ansi-language:EN-US'>&quot; quantity:
+     &quot; + cnt.i);<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span
+     style='font-family:Garamond'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span
+     style='font-family:Garamond'>}<o:p></o:p></span></b></li>
+ <li class=MsoNormal style='color:blue;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><b><span
+     style='font-family:Garamond'>}<o:p></o:p></span></b></li>
+</ol>
+
+<p><span style='font-family:Garamond'><img width=13 height=13 id="_x0000_i1028"
+src=Bullet1.gif border=0>&nbsp;</span><span style='font-family:Garamond;
+color:blue'>Problema 4.</span><span style='font-family:Garamond'> Para cada uno
+de los programas anteriores, realizar los cambios necesarios (almacenándolos en
+archivos con otros nombres) para generar los métodos adecuados que sean
+llamados y gestionen la excepción volviéndola a lanzar, regresando el flujo del
+programa. Deberá crear sus propias excepciones (con nombre nuevo y del tipo
+correcto).<o:p></o:p></span></p>
+
+<p><span style='font-family:Garamond'><img width=13 height=13 id="_x0000_i1029"
+src=Bullet1.gif border=0>&nbsp; </span><span style='font-family:Garamond;
+color:blue'>Problema 5.</span><span style='font-family:Garamond'> Ahora digamos
+que desea incluir un segmento de código ejecutable antes de devolver el flujo
+del programa a la llamada, utilice finally para realizar esto, obviamente
+guardando sus cambios en archivos con nombres diferentes. </span><span
+style='font-family:Garamond;color:blue'>Observación:</span><span
+style='font-family:Garamond'> sea ingenioso al introducir las líneas de código
+a ejecutar en finally.<o:p></o:p></span></p>
+
+<p style='margin-left:36.0pt'><b><span style='font-size:13.5pt;font-family:
+Garamond;color:blue'>Problemas Complementarios.<o:p></o:p></span></b></p>
+
+<p><span style='font-family:Garamond'><img width=13 height=13 id="_x0000_i1030"
+src=Bullet1.gif border=0>&nbsp; Problema 1. Diseñe un programa que contenga una
+clase con un método que genere números aleatorios, otro que reciba dos números
+aleatorios y realice la división entre estos, uno más que reciba un número
+aleatorio y que devuelva la raíz cuadrada del mismo, otro para obtener el
+logaritmo del número aleatorio, maneje las excepciones que se generan en estos
+métodos utilizando una clase que herede de Exception para manejarlas.<o:p></o:p></span></p>
+
+<p><span style='font-family:Garamond'><img width=13 height=13 id="_x0000_i1031"
+src=Bullet1.gif border=0>&nbsp; Problema 2. </span>Cree un programa completo en
+el que maneje correctamente el uso de finally por lo menos para los tres tipos
+de excepciones siguientes:<span style='mso-fareast-font-family:"Arial Unicode MS"'><o:p></o:p></span></p>
+
+<p style='margin-left:35.4pt'>i.<span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Aritmética</p>
+
+<p style='margin-left:35.4pt'>ii.<span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Arreglo fuera de límite.</p>
+
+<p style='margin-left:35.4pt'>iii.<span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Clase no encontrada.</p>
+
+<p style='margin-left:35.4pt'>Maneje las excepciones con una clase que herede
+de Exception. Explique que situación es correcta manejar y cual no de las
+anteriores excepciones.</p>
+
+<p style='tab-stops:list 72.0pt'><span style='font-family:Garamond'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1035" type="#_x0000_t75" alt="" style='width:9.75pt;
+ height:9.75pt' o:bullet="t">
+ <v:imagedata src="Bullet1.gif"/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=13 src=Bullet1.gif
+border=0 v:shapes="_x0000_i1035"><![endif]><span style="mso-spacerun:
+yes"> </span>Problema 3. Del problema 3 de la práctica 9 (a continuación se
+proporciona por conveniencia)<o:p></o:p></span></p>
+
+<p style='margin-left:35.4pt;tab-stops:list 72.0pt'>Haga un programa en applet
+que realice una demostración<span style="mso-spacerun: yes">  </span>del
+funcionamiento de controles y menús para las clases Label, Button, Checkbox,
+Scrollbar, TexField y TextArea, List, Choice. El usuario del programa deberá
+incorporar opciones de entrada, de tal manera que cuando los parámetros sean
+incorrectos se señale el error adecuado.</p>
+
+<p style='margin-left:35.4pt;tab-stops:list 72.0pt'>i )<span
+style="mso-spacerun: yes">  </span>Maneje los errores utilizando una clase que
+extienda de Exception.</p>
+
+<p style='margin-left:35.4pt;tab-stops:list 72.0pt'>ii )<span
+style="mso-spacerun: yes">  </span>Utilice el código adecuado en <span
+style='color:blue'>finally</span> para que se pueda corregir el error que se
+presente.</p>
+
+<p style='margin-left:35.4pt;tab-stops:list 72.0pt'>iii ) Informe de cada uno
+de los errores cometidos al usuario utilizando cajas de dialogo y botones para
+que sepa de su existencia.</p>
+
+<p align=center style='margin-left:36.0pt;text-align:center'><span
+style='font-family:Garamond'><img width=536 height=5 id="_x0000_i1033"
+src=Image9.gif border=0><o:p></o:p></span></p>
+
+<p align=center style='margin-left:36.0pt;text-align:center'><b><span
+style='font-size:10.0pt;font-family:Arial'>Página relacionada 1 | Página
+relacionada 2 | Página relacionada 3<o:p></o:p></span></b></p>
+
+</div>
+
+</body>
+
+</html>

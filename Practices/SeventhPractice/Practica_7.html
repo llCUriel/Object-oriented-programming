@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 5.50.4134.600" name=GENERATOR></HEAD>
+<BODY bgColor=cyan topMargin=0 marginheight="0">
+<DIV class=Section1>
+<H1>EXCEPCIONES:Try y Catch</H1>
+<H3>INTRODUCCIÓN TEORICA.</H3>
+<P class=MsoNormal 
+style="TEXT-INDENT: 35.4pt; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">A diferencia de otros lenguajes de programacion 
+orientados a objetos como C/C++, <B><I>Java </I></B>incorpora en el propio 
+lenguaje la gestion de errores. El mejor momento para detectar los errores es 
+durante la compilacion. Sin embargo practicamente solo los errores de sintaxis 
+son detectados durante este periodo. El resto de problemas surgen durante la 
+ejecucion de los programas. En el lenguaje <B><I>Java</I></B>, una 
+<B><I>Exception </I></B>es un cierto tipo de error o una condicion anormal que 
+se ha producido durante la ejecucion de un programa. Algunas <B><I>excepciones 
+</I></B>son fatales y provocan que se deba finalizar la ejecucion del programa. 
+En este caso conviene terminar ordenadamente y dar un mensaje explicando el tipo 
+de error que se ha producido. Otras, como por ejemplo no encontrar un archivo en 
+el que hay que leer o escribir algo, pueden ser recuperables. En este caso el 
+programa debe dar al usuario la oportunidad de corregir el error (indicando una 
+nueva localizacion del archivo no encontrado).<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><![if !supportEmptyParas]><![endif]><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><B><SPAN 
+style="FONT-SIZE: 12pt">Bloques try y catch<O:P></O:P></SPAN></B></P>
+<P class=MsoNormal 
+style="TEXT-INDENT: 35.4pt; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">En el caso de las excepciones que no pertenecen a las 
+<B><I>RuntimeException</I></B> y que por lo tanto <B><I>Java </I></B>obliga a 
+tenerlas en cuenta habra que utilizar los bloques <B><I>tr</I></B>y, <B><I>catch 
+</I></B>y <B><I>finally</I></B>. El codigo dentro del<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>bloque <B><I>try </I></B>está 
+“vigilado”: Si se produce una situación anormal y se lanza por lo tanto una 
+excepción el control salta o sale del bloque <B><I>try </I></B>y pasa al bloque 
+<B><I>catc</I></B>h, que se hace cargo de la situación y decide lo que hay que 
+hacer. Se pueden incluir tantos bloques <B><I>catch </I></B>como sean 
+necesarios, cada uno de los cuales tratará un tipo de 
+excepción.<O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="TEXT-INDENT: 35.4pt; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">Las excepciones se pueden capturar individualmente o en 
+grupo, por medio de una superclase de la que deriven todas 
+ellas.<O:P></O:P></SPAN></P>
+<P class=MsoNormal 
+style="TEXT-INDENT: 35.4pt; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">El bloque <B><I>finally </I></B>es opcional. Si se 
+incluye sus sentencias se ejecutan siempre, sea cual sea la excepción que se 
+produzca o si no se produce ninguna. El bloque <B><I>finally </I></B>se ejecuta 
+aunque en el bloque <B><I>try </I></B>haya un 
+<B><I>retur</I></B>n.<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><I><![if !supportEmptyParas]><![endif]><O:P></O:P></I></P>
+<H3><B>DESARROLLO DE LA PRÁCTICA<O:P></O:P></B></H3>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Courier"><![if !supportEmptyParas]><![endif]><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>Este es un programa simple de cómputo de líneas que utiliza el 
+LineNumberInputStream para realizar la cuenta. En general, sólo las situaciones 
+más simples necesitarán que se utilice un LineNumberInputStream en los programa. 
+Corra el programa y observe la forma en que se utiliza try y 
+catch<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><![if !supportEmptyParas]><![endif]><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">Import 
+java.io.*;<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">Public class 
+LineCounbter{<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>Static LineNumberInputStream m_istreamLineNum;<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>Public static void main (String astrArgs[]){<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>If(1 !=astrArgs.length) {<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN style="FONT-SIZE: 12pt">System.err.println(“Error de 
+utilización: \n LineCounter<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">&lt;arch-entrada&gt;”);<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>System.exit(-1);<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">}<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">try{<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>FileInputStream is = new 
+FileInputStream(astrArgs[0]);<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; 
+</SPAN>M_istreamLineNum = new LineNUmberInputStream (is);<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">}catch (Exception 
+e){<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN style="FONT-SIZE: 12pt">System.err.println(“Error:\n Al leer 
+el archivo de entrada “+<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">AstrArgs[0];<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>System.exit(-1);<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>Try{<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>while(-1 ¡=m_istreamLineNum.read()0);<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">} catch (Exception 
+e){<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN style="FONT-SIZE: 12pt">System.err.println(“Error:\n Al leer 
+del archivo de entrada.”);<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>Syetem.exit(-1);<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">}<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>System.out.println(“Recuento de líneas terminado. El número de líneas es: 
+<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">+m_istreamlineNUm.getLineNumber());<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">}<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US">}<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><![if !supportEmptyParas]><![endif]><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-ansi-language: EN-US"><![if !supportEmptyParas]><![endif]><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">1.- Realicé un programa que implemente el método 
+numérico de Newton – Rapshon empleando excepciones cuando sea 
+necesario.<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><![if !supportEmptyParas]><![endif]><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">2.- Desarrolle un programa de tal manera que se capture 
+por teclado el nombre de un animal y se de cómo salida la imagen de este junto 
+con su clasificación (mamífero, insecto, herbívoro), cuando no se encuentre la 
+imagen el software deberá de señalar el error, para que el usuario lo 
+corrija.<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><![if !supportEmptyParas]><![endif]><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">3.- Haga un programa en applet que realice una 
+demostración <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>del funcionamiento de 
+controles y menús para las clases Label, Button, Checkbox, Scrollbar, TexField y 
+TextArea, List, Choice. El usuario del programa deberá incorporar opciones de 
+entrada, de tal manera que cuando los parámetros sean incorrectos se señale el 
+error adecuado.<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><![if !supportEmptyParas]><![endif]><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt">4.- Implemente un programa para que generé la barra de 
+menús y submenús de tal forma que contenga las siguientes opciones: Archivo, 
+Edición, Ordenes, Ayuda, simule el comportamiento de selección de cada menú y 
+submenu, por ejemplo:<O:P></O:P></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 12pt"><SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Seleccionó 
+Archivo-Abrir y deberá salir una caja de dialogo solicitando el nombre del 
+archivo, después de dar enter o aceptar en un check box, deberá aparecer un 
+gráfico donde un indicador de progreso de abertura del archivo. Lo anterior no 
+quiere decir que abra físicamente un archivo, solo hay que simular todas las 
+acciones pertinentes manejando excepciones.<O:P></O:P></SPAN></P></DIV>
+
+
+<TABLE WIDTH=605 HEIGHT=80>
+<TR>
+<TD ALIGN=CENTER WIDTH=80 HEIGTH=80><A HREF="unidad_V.HTML"><IMG SRC="regresar.JPG" WIDTH=35 HEIGTH=30><BR>regresar</A></TD>
+<TD WIDTH=80></TD>
+<TD ALIGN=CENTER WIDTH=80 HEIGTH=80><A HREF="contenido.HTML"><IMG SRC="salir.JPG" WIDTH=35 HEIGTH=30><BR>salir</A></TD>
+<TD WIDTH=80></TD>
+<TD ALIGN=CENTER WIDTH=80 HEIGTH=80><A HREF="Practica_10.HTML"><IMG SRC="continuar.JPG" WIDTH=35 HEIGTH=30><BR>continuar</A></TD>
+</TR>
+</TABLE>
+
+
+</BODY></HTML>
