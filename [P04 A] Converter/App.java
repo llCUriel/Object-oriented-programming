@@ -1,13 +1,10 @@
+package Parte02;
 
-package asaasa;
-
-/**
- *
- * @author uurie
- */
 public class App {
+
     public static void main(String[] args) {
-        ProbadorDeAplicacion n = new ProbadorDeAplicacion();
-        n.probarApp();
+        probadorDeAplicacion n = new probadorDeAplicacion();
+        n.probarAplicacion();
     }
+
 }
