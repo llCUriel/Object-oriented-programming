@@ -14,7 +14,7 @@ public class ConversorDeInt {
 
     @Override
     public String toString() {
-        return "ConversorDeBoolean{"
+        return "ConversorDeInt{"
                 + "by=" + by
                 + ", sh=" + sh
                 + ", lo=" + lo
@@ -56,71 +56,38 @@ public class ConversorDeInt {
     }
 
     public void convIntToByte(int bol) {
-        try {
-            by = (byte) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a byte");
-        }
-
+        by = (byte) bol;
     }
 
     public void convIntToShort(int bol) {
-        try {
-            sh = (short) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a short");
-        }
+        sh = (short) bol;
     }
 
     public void convIntToLong(int bol) {
-        try {
-            lo = (long) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a long");
-        }
+        lo = (long) bol;
     }
 
     public void convIntToDouble(int bol) {
-        try {
-            dou = (double) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a double");
-        }
+        dou = (double) bol;
     }
 
     public void convIntToChar(int bol) {
-        try {
-            cha = (char) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a char");
-        }
+        cha = (char) bol;
     }
 
     public void convIntToBool(int bol) {
-        try {
-            if (bol == 0) {
-                bool = false;
-            } else {
-                bool = true;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a bool");
+        if (bol == 0) {
+            bool = false;
+        } else {
+            bool = true;
         }
     }
 
     public void convIntToFloat(int valor) {
-        try {
-            flo = (float) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a float");
-        }
+        flo = (float) valor;
     }
 
     public void convIntToString(int bol) {
-        try {
-            cadena = String.valueOf(bol);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a String");
-        }
+        cadena = String.valueOf(bol);
     }
 }

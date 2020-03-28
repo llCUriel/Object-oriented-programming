@@ -14,7 +14,7 @@ public class ConversorDeFloat {
 
     @Override
     public String toString() {
-        return "ConversorDeBoolean{"
+        return "ConversorDeFloat{"
                 + "by=" + by
                 + ", sh=" + sh
                 + ", in=" + in
@@ -43,72 +43,39 @@ public class ConversorDeFloat {
     }
 
     public void convFloatToByte(float bol) {
-        try {
             by = (byte) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a byte");
-        }
     }
 
     public void convFloatToShort(float bol) {
-        try {
-            sh = (short) bol;
-
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a short");
-        }
+        sh = (short) bol;
     }
 
     public void convFloatToInt(float bol) {
-        try {
-            in = (int) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a  int");
-        }
+        in = (int) bol;
     }
 
     public void convFloatToLong(float bol) {
-        try {
-            lo = (long) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a long");
-        }
+        lo = (long) bol;
     }
 
     public void convFloatToDouble(float bol) {
-        try {
-            dou = (double) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a double");
-        }
+        dou = (double) bol;
     }
 
     public void convFloatToChar(float bol) {
-        try {
-            cha = (char) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a char");
-        }
+        cha = (char) bol;
     }
 
     public void convFloatToBool(float bol) {
-        try {
-            if (bol == 0) {
-                bool = false;
-            } else {
-                bool = true;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de long a bool");
+        if (bol == 0) {
+            bool = false;
+        } else {
+            bool = true;
         }
     }
 
     public void convFloatToString(float bol) {
-        try {
-            cadena = String.valueOf(bol);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a String");
-        }
+        cadena = String.valueOf(bol);
     }
 
 }

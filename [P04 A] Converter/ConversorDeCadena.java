@@ -22,7 +22,7 @@ public class ConversorDeCadena {
                 + ", flo=" + flo
                 + ", dou=" + dou
                 + ", cha=" + cha
-                + ", bool=" + bool+"}";
+                + ", bool=" + bool + "}";
     }
 
     public ConversorDeCadena(String cadena, byte by, short sh, int in, long lo, float flo, double dou, char cha, boolean bool) {
@@ -56,71 +56,42 @@ public class ConversorDeCadena {
     }
 
     public void convStringToByte(String cadena) {
-        try {
-            by = Byte.parseByte(cadena);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de String a byte");
-        }
+        by = Byte.parseByte(cadena);
     }
 
     public void convStringToShort(String cadena) {
-        try {
-            sh = Short.parseShort(cadena);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de String a short");
-        }
+        sh = Short.parseShort(cadena);
     }
 
     public void convStringToInt(String cadena) {
-        try {
-            in = Integer.parseInt(cadena);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de String a int");
-        }
+        in = Integer.parseInt(cadena);
     }
 
     public void convStringToLong(String cadena) {
-        try {
-            lo = Long.parseLong(cadena);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de String a long");
-        }
+        lo = Long.parseLong(cadena);
     }
 
     public void convStringToFloat(String cadena) {
-        try {
-            flo = Float.parseFloat(cadena);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de String a float");
-        }
+        flo = Float.parseFloat(cadena);
     }
 
     public void convStringToDouble(String cadena) {
-        try {
-            dou = Double.parseDouble(cadena);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de String double");
-        }
+        dou = Double.parseDouble(cadena);
+
     }
 
     public void convStringToChar(String cadena) {
-        try {
-            if (cadena.length() == 1) {
-                cha = cadena.charAt(0);
-            } else {
-                cha = '\u0000';
-                System.out.println("Únicamente cadenas con longitud uno");
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de String a char");
+        if (cadena.length() == 1) {
+            cha = cadena.charAt(0);
+        } else {
+            cha = '\u0000';
+            System.out.println("Únicamente cadenas con longitud uno");
         }
+
     }
 
     public void convStringToBoolean(String cadena) {
-        try {
-            bool = Boolean.parseBoolean(cadena);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de String a boolean");
-        }
+        bool = Boolean.parseBoolean(cadena);
+
     }
 }

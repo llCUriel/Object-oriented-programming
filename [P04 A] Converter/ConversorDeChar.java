@@ -55,74 +55,40 @@ public class ConversorDeChar {
     }
 
     public void convCharToByte(char caracter) {
-        try {
-            by = (byte) caracter;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de char a byte");
-        }
+        by = (byte) caracter;
     }
 
     public void convCharToShort(char caracter) {
-        try {
-
-            sh = (short) caracter;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de char a short");
-        }
+        sh = (short) caracter;
     }
 
     public void convCharToInt(char caracter) {
-        try {
-            in = Character.getNumericValue(caracter);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de char a int");
-        }
+        in = Character.getNumericValue(caracter);
     }
 
     public void convCharToLong(char caracter) {
-        try {
-            lo = Character.getNumericValue(caracter);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de char a int");
-        }
+        lo = Character.getNumericValue(caracter);
     }
 
     public void convCharToFloat(char caracter) {
-        try {
-            flo = (float) caracter;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de char a float");
-        }
+        flo = (float) caracter;
     }
 
     public void convCharToDouble(char caracter) {
-        try {
-
-            dou = (double) caracter;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de char a double");
-        }
+        dou = (double) caracter;
     }
 
     public void convCharToBool(char caracter) {
-        try {
-            switch (caracter) {
-                case 'y':
-                    bool = true;
-                case 'n':
-                    bool = false;
-            }
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error al convertir de char a boolean");
+        switch (caracter) {
+            case 'y':
+                bool = true;
+            case 'n':
+                bool = false;
         }
     }
 
     public void convCharToString(char caracter) {
-        try {
-            cadena = String.valueOf(caracter);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de char a String");
-        }
+        cadena = String.valueOf(caracter);
     }
 
 }

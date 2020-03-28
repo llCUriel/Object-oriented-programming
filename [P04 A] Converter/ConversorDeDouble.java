@@ -56,70 +56,39 @@ public class ConversorDeDouble {
     }
 
     public void convDoubleToByte(double valor) {
-        try {
             by = (byte) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de double a byte");
-        }
+ 
     }
 
     public void convDoubleToShort(double valor) {
-        try {
             sh = (short) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de double a short");
-        }
     }
 
     public void convDoubleToInt(double valor) {
-        try {
             in = (int) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de double a int");
-        }
     }
 
     public void convDoubleToLong(double valor) {
-        try {
             lo = (long) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de double a long");
-        }
     }
 
     public void convDoubleToFloat(double valor) {
-        try {
             flo = (float) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de double a float");
-        }
     }
 
     public void convDoubleToChar(double valor) {
-        try {
             cha = (char) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de double a char");
-        }
     }
 
     public void convDoubleToBoolean(double valor) {
-        try {
             if (valor == 0) {
                 bool = false;
             } else {
                 bool = true;
             }
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de double a boolean");
-        }
     }
 
     public void convDoubleToString(double valor) {
-        try {
             cadena = Double.toString(valor);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de double a String");
-        }
     }
 }

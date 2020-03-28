@@ -14,7 +14,7 @@ public class ConversorDeLong {
 
     @Override
     public String toString() {
-        return "ConversorDeBoolean{"
+        return "ConversorDeLong{"
                 + "by=" + by
                 + ", sh=" + sh
                 + ", in=" + in
@@ -56,80 +56,39 @@ public class ConversorDeLong {
     }
 
     public void convLongToByte(long bol) {
-        try {
-            by = (byte) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de long a byte");
-        }
-
+        by = (byte) bol;
     }
 
     public void convLongToShort(long bol) {
-        try {
-            sh = (short) bol;
-
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de long a short");
-        }
+        sh = (short) bol;
     }
 
     public void convLongToBool(long bol) {
-        try {
-
-            if (bol == 0) {
-                bool = false;
-            } else {
-                bool = true;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de long a bool");
+        if (bol == 0) {
+            bool = false;
+        } else {
+            bool = true;
         }
-
     }
 
     public void convLongToInt(long bol) {
-        try {
-            in = (int) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a  int");
-        }
-
+        in = (int) bol;
     }
 
     public void convLongToFloat(long bol) {
-        try {
-            flo = (float) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a float");
-        }
-
+        flo = (float) bol;
     }
 
     public void convLongToDouble(long bol) {
-        try {
-            dou = (double) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a double");
-        }
-
+        dou = (double) bol;
     }
 
     public void convLongToChar(long bol) {
-        try {
-            cha = (char) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a char");
-        }
-
+        cha = (char) bol;
     }
 
     public void convLongToString(long bol) {
-        try {
-            cadena = String.valueOf(bol);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a String");
-        }
-
+        cadena = String.valueOf(bol);
     }
 
 }

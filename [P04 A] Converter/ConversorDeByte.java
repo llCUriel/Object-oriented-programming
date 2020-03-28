@@ -43,71 +43,40 @@ public class ConversorDeByte {
     }
 
     public void convByteToShort(byte bol) {
-        try {
-            sh = (short) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de int a short");
-        }
+        sh = (short) bol;
     }
 
     public void convByteToInt(byte bol) {
-        try {
-            in = (int) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de byte a  int");
-        }
+        in = (int) bol;
     }
 
     public void convByteToLong(byte bol) {
-        try {
-            lo = (long) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de byte a long");
-        }
+        lo = (long) bol;
     }
 
     public void convByteToDouble(byte bol) {
-        try {
-            dou = (double) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de byte a double");
-        }
+        dou = (double) bol;
     }
 
     public void convByteToChar(byte bol) {
-        try {
-            cha = (char) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de byte a char");
-        }
+        cha = (char) bol;
     }
 
     public void convByteToBool(byte bol) {
-        try {
-            if (bol == 0) {
-                bool = false;
-            } else {
-                bool = true;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de byte a bool");
+        if (bol == 0) {
+            bool = false;
+        } else {
+            bool = true;
         }
+
     }
 
     public void convByteToFloat(byte valor) {
-        try {
-            flo = (float) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de byte a float");
-        }
+        flo = (float) valor;
     }
 
     public void convByteToString(byte bol) {
-        try {
-            cadena = String.valueOf(bol);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a String");
-        }
+        cadena = String.valueOf(bol);
     }
 
 }

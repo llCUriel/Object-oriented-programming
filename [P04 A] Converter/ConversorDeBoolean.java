@@ -55,68 +55,41 @@ public class ConversorDeBoolean {
     }
 
     public void convBooleanToByte(boolean bol) {
-        try {
-            by = (byte) (bol ? 1 : 0);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a byte");
-        }
+        by = (byte) (bol ? 1 : 0);
     }
 
     public void convBooleanToShort(boolean bol) {
-        try {
-            sh = (short) (bol ? 1 : 0);
+        sh = (short) (bol ? 1 : 0);
 
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a short");
-        }
     }
 
     public void convBooleanToInt(boolean bol) {
-        try {
-            in = (bol) ? 1 : 0;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a  int");
-        }
+        in = (bol) ? 1 : 0;
+
     }
 
     public void convBooleanToLong(boolean bol) {
-        try {
-            lo = (bol) ? 1L : 0L;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a long");
-        }
+        lo = (bol) ? 1L : 0L;
+
     }
 
     public void convBooleanToFloat(boolean bol) {
-        try {
-            flo = (bol) ? 1.0f : 0.0f;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a float");
-        }
+        flo = (bol) ? 1.0f : 0.0f;
+
     }
 
     public void convBooleanToDouble(boolean bol) {
-        try {
-            dou = (bol) ? 1.0d : 0.0d;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a double");
-        }
+        dou = (bol) ? 1.0d : 0.0d;
+
     }
 
     public void convBooleanToChar(boolean bol) {
-        try {
-            cha = (bol) ? '1' : '0';
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a char");
-        }
+        cha = (bol) ? '1' : '0';
+
     }
 
     public void convBooleanToString(boolean bol) {
-        try {
-            cadena = String.valueOf(bol);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de boolean a String");
-        }
+        cadena = String.valueOf(bol);
     }
 
 }

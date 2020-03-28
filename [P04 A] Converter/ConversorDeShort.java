@@ -14,7 +14,7 @@ public class ConversorDeShort {
 
     @Override
     public String toString() {
-        return "ConversorDeBoolean{"
+        return "ConversorDeShort{"
                 + "by=" + by
                 + ", in=" + in
                 + ", lo=" + lo
@@ -43,77 +43,41 @@ public class ConversorDeShort {
     }
 
     public void convShortToFloat(short valor) {
-        try {
-            flo = (float) valor;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de short a float");
-        }
+        flo = (float) valor;
+
     }
 
     public void convShortToByte(short bol) {
-        try {
-            by = (byte) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de short a byte");
-        }
-
+        by = (byte) bol;
     }
 
     public void convShortToInt(short bol) {
-        try {
-            in = (int) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de short a  int");
-        }
-
+        in = (int) bol;
     }
 
     public void convShortToLong(short bol) {
-        try {
-            lo = (long) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de short a long");
-        }
-
+        lo = (long) bol;
     }
 
     public void convShortToDouble(short bol) {
-        try {
-            dou = (double) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de short a double");
-        }
-
+        dou = (double) bol;
     }
 
     public void convShortToChar(short bol) {
-        try {
-            cha = (char) bol;
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de short a char");
-        }
-
+        cha = (char) bol;
     }
 
     public void convShortToBool(short bol) {
-        try {
-            if (bol == 0) {
-                bool = false;
-            } else {
-                bool = true;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de short a bool");
+        if (bol == 0) {
+            bool = false;
+        } else {
+            bool = true;
         }
 
     }
 
     public void convShortToString(short bol) {
-        try {
-            cadena = String.valueOf(bol);
-        } catch (NumberFormatException e) {
-            System.out.println("Error al convertir de float a String");
-        }
+        cadena = String.valueOf(bol);
 
     }
 
