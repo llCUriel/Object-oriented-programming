@@ -4,10 +4,6 @@ public class Mensaje {
     
     private String cadena;
     
-    public Mensaje(){
-        this.cadena = "";
-    }
-
     public String getCadena() {
         return cadena;
     }

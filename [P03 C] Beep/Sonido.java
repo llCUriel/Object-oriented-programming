@@ -6,14 +6,6 @@ public class Sonido {
 
     private String sonidoAEmitir;
 
-    public Sonido(String sonidoAEmitir) {
-        this.sonidoAEmitir = sonidoAEmitir;
-    }
-
-    public Sonido() {
-        this.sonidoAEmitir = "";
-    }
-
     public String getSonidoAEmitir() {
         return sonidoAEmitir;
     }
@@ -28,6 +20,7 @@ public class Sonido {
     }
 
     public void emitirSonido() {
+
         if (sonidoAEmitir.equalsIgnoreCase("beep")) {
             Toolkit.getDefaultToolkit().beep();
         }

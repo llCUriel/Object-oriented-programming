@@ -1,14 +1,11 @@
+package Parte01;
+
+
 public class Mensaje {
 
     private String mensaje;
 
-    public Mensaje(String mensaje) {
-        this.mensaje = mensaje;
-    }
-
-    public Mensaje(){
-        this.mensaje = null;
-    }
+  
 
     public void setMensaje(String mensaje){
         this.mensaje = mensaje;
@@ -22,8 +19,5 @@ public class Mensaje {
             return "Mensaje: "+mensaje;
     }
 
-    protected void finalize() {
-        mensaje = null;
-        System.gc();
-    }
+ 
 }

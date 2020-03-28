@@ -1,3 +1,4 @@
+package Parte01;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -8,34 +9,27 @@ public class Cheque {
     private Integer montoDelCheque;
     private UsuarioDeBanco emisor;
 
-    public Cheque() {
-        this.montoDelCheque = 0;
+    public void mostrarCheque(Integer montoDelCheque, UsuarioDeBanco emisor) {
         this.fecha = new Fecha();
-    }
-    
-    public Cheque(Integer montoDelCheque, UsuarioDeBanco emisor){
-        this.montoDelCheque = montoDelCheque;
         this.emisor = emisor;
-        this.fecha = new Fecha();
-    }
-
-    public void mostrarCheque() {
+        this.montoDelCheque = montoDelCheque;
+        
         ConversorDeNumeroALetra conversor = new ConversorDeNumeroALetra();
         Mensaje m = new Mensaje();
 
-        String nombreDeUsuario = emisor.getNombreCompleto();
-        String conversionDeNumero = conversor.convertirNumeroALetra(montoDelCheque);
+        String nombreDeUsuario = this.emisor.getNombreCompleto();
+        String conversionDeNumero = conversor.convertirNumeroALetra(this.montoDelCheque);
         String fechaActual = fecha.obtFechaActual();
 
         LinkedList<String> plantilla = obtenerPlantillaDeCheque();
         LinkedList<String> datos = new LinkedList<String>(Arrays.asList(fechaActual, nombreDeUsuario, conversionDeNumero, nombreDeUsuario));
-        
+
         int i = 0;
         while (i < datos.size()) {
             String str01 = plantilla.get(i);
             String str02 = datos.get(i);
             if (i == 2) {
-                str02+=  "\t\t" + "$ "+Integer.toString(montoDelCheque);
+                str02 += "\t\t" + "$ " + Integer.toString(this.montoDelCheque);
             }
             m.setMensaje(str01 + str02);
             m.mostrarMensaje();
