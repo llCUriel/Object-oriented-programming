@@ -1,3 +1,5 @@
+package Parte04;
+
 public class Matriz {
 
     private int numerodecolumnas;

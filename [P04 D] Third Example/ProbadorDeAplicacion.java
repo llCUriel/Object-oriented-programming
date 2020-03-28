@@ -1,3 +1,5 @@
+package Parte05;
+
 public class ProbadorDeAplicacion {
 
     private Matriz3D _matriz;

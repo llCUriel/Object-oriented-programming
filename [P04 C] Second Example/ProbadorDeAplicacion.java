@@ -1,3 +1,5 @@
+package Parte04;
+
 public class ProbadorDeAplicacion {
 
     private Matriz _matriz[];

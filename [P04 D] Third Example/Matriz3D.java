@@ -1,3 +1,5 @@
+package Parte05;
+
 public class Matriz3D {
 
     private int _ncolumnas;
