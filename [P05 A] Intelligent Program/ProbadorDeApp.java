@@ -3,13 +3,13 @@ package Parte02;
 import java.util.LinkedList;
 
 public class ProbadorDeApp {
-
+    
     private ExpresionPostfija exp;
     private ConversorDeCadena conv;
     private Calculadora calc;
     private Teclado tcl;
     private Mensaje msj;
-
+    
     public ProbadorDeApp() {
         exp = new ExpresionPostfija();
         tcl = new Teclado();
@@ -17,7 +17,7 @@ public class ProbadorDeApp {
         calc = new Calculadora();
         conv = new ConversorDeCadena();
     }
-
+    
     public void probarApp() {
         int i = 0;
         float res = (float) 0.0;
@@ -40,8 +40,16 @@ public class ProbadorDeApp {
             i++;
         }
         msj.desplegarResultadoFinal(res, historial);
+        msj.setCadena("¿Desea hacer otro cálculo? y/n");
+        msj.mostrarMensajeN();
+        entrada = tcl.leerCadena();
+        if (entrada.equalsIgnoreCase("y")) {
+            probarApp();
+        } else {
+            System.exit(0);
+        }
     }
-
+    
     public float calcularNuevoValor(String operador, float operadorA, float operadorB) {
         calc.setOperandos(operadorA, operadorB);
         float res = (float) 0.0;
@@ -67,7 +75,7 @@ public class ProbadorDeApp {
         }
         return res;
     }
-
+    
     public String corregirNumero(String numero, String operador) {
         if (operador.equals("+") || operador.equals("-") || operador.equals("/")) {
             return numero.replace(operador, "");
@@ -75,11 +83,11 @@ public class ProbadorDeApp {
             return numero;
         }
     }
-
+    
     public String obtenerEntrada() {
         msj.setCadena("Entrada al programa:");
         msj.mostrarMensajeF();
         return tcl.leerCadena();
     }
-
+    
 }
