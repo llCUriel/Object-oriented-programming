@@ -1,5 +1,3 @@
-package Parte02;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

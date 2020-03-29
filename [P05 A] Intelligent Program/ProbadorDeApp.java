@@ -1,5 +1,3 @@
-package Parte02;
-
 import java.util.LinkedList;
 
 public class ProbadorDeApp {

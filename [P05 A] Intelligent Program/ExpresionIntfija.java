@@ -1,6 +1,3 @@
-package Parte02;
-
-
 public class ExpresionIntfija {
 
     private String expresionInFija;
