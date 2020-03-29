@@ -1,15 +1,17 @@
+package Parte02;
+
 import java.util.LinkedList;
 
 public class ProbadorDeApp {
     
-    private ExpresionPostfija exp;
+    private ExpresionIntfija exp;
     private ConversorDeCadena conv;
     private Calculadora calc;
     private Teclado tcl;
     private Mensaje msj;
     
     public ProbadorDeApp() {
-        exp = new ExpresionPostfija();
+        exp = new ExpresionIntfija();
         tcl = new Teclado();
         msj = new Mensaje();
         calc = new Calculadora();

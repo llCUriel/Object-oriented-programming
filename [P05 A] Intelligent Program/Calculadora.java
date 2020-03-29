@@ -1,3 +1,5 @@
+package Parte02;
+
 public class Calculadora {
 
     private float operadorA;

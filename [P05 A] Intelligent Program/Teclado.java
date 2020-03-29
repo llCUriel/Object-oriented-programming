@@ -1,3 +1,6 @@
+package Parte02;
+
+import Parte01.*;
 import java.util.Scanner;
 
 public class Teclado {
