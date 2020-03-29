@@ -1,5 +1,3 @@
-package TiendaDepartamental;
-
 import java.util.Scanner;
 
 public class ProbadorDeApp {

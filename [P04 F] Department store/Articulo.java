@@ -1,5 +1,3 @@
-package TiendaDepartamental;
-
 public class Articulo {
 
     private double precioDelArticulo;

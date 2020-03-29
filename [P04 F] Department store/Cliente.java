@@ -1,5 +1,3 @@
-package TiendaDepartamental;
-
 public class Cliente {
 
     private int numeroDeCuenta;

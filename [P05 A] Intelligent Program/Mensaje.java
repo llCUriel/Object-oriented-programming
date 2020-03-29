@@ -1,6 +1,3 @@
-package Parte02;
-
-import Parte01.*;
 import java.util.LinkedList;
 
 public class Mensaje {

@@ -1,5 +1,3 @@
-package Parte02;
-
 public class ConversorDeCadena {
 
     private String str;
