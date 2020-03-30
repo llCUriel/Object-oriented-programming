@@ -1,13 +1,15 @@
+package Parte02;
+
 import java.util.LinkedList;
 
 public class ProbadorDeApp {
-    
+
     private ExpresionIntfija exp;
     private ConversorDeCadena conv;
     private Calculadora calc;
     private Teclado tcl;
     private Mensaje msj;
-    
+
     public ProbadorDeApp() {
         exp = new ExpresionIntfija();
         tcl = new Teclado();
@@ -15,18 +17,17 @@ public class ProbadorDeApp {
         calc = new Calculadora();
         conv = new ConversorDeCadena();
     }
-    
+
     public void probarApp() {
         int i = 0;
         float res = (float) 0.0;
         String[] datos = null;
         String entrada = "";
         LinkedList historial = new LinkedList();
+        msj.setCadena("Variable: X=0.0");
+        msj.mostrarMensajeN();
         while (!entrada.equalsIgnoreCase("n")) {
-            if (i == 0) {
-                msj.setCadena("Variable: X=0.0");
-                msj.mostrarMensajeN();
-            } else {
+            if (i != 0) {
                 String operador = datos[1];
                 String numero = corregirNumero(datos[0], operador);
                 res = calcularNuevoValor(operador, res, conv.convertirAFloat(numero));
@@ -47,7 +48,7 @@ public class ProbadorDeApp {
             System.exit(0);
         }
     }
-    
+
     public float calcularNuevoValor(String operador, float operadorA, float operadorB) {
         calc.setOperandos(operadorA, operadorB);
         float res = (float) 0.0;
@@ -73,7 +74,7 @@ public class ProbadorDeApp {
         }
         return res;
     }
-    
+
     public String corregirNumero(String numero, String operador) {
         if (operador.equals("+") || operador.equals("-") || operador.equals("/")) {
             return numero.replace(operador, "");
@@ -81,11 +82,11 @@ public class ProbadorDeApp {
             return numero;
         }
     }
-    
+
     public String obtenerEntrada() {
         msj.setCadena("Entrada al programa:");
         msj.mostrarMensajeF();
         return tcl.leerCadena();
     }
-    
+
 }
